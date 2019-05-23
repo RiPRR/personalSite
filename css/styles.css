@@ -1,0 +1,37 @@
+#heading{
+	font-family: "robo";
+	font-size: 32pt;
+}
+#nav{
+	font-family: "helvetica";
+	font-size:12pt;
+	margin-left: 10px;
+}
+#main{
+	display: flex;
+	justify-content: center;
+	/*border: solid;*/
+}
+#info{
+	border-radius: 5px;
+	transform: rotate(2deg);
+	background-color: grey;
+	display: flex;
+	/*border: dotted;*/
+	width: 35%
+}
+.navs{
+	cursor: pointer;
+}
+p{
+	padding: 10px;
+	font-family: "helvetica"
+}
+a{
+	color: #C63D46;
+	text-decoration: none;
+}
+@font-face{
+	font-family: "robo";
+	src:url(../fonts/Roboto-Black.ttf);
+}
