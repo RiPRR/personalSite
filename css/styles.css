@@ -18,10 +18,12 @@
 	background-color: grey;
 	display: flex;
 	/*border: dotted;*/
-	width: 35%
+	width: 35%;
+	border:solid;
 }
 .navs{
 	cursor: pointer;
+	width: 5%;
 }
 p{
 	padding: 10px;
@@ -34,4 +36,16 @@ a{
 @font-face{
 	font-family: "robo";
 	src:url(../fonts/Roboto-Black.ttf);
+}
+.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
 }

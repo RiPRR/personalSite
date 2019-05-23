@@ -1,4 +1,4 @@
 $("#projects").click(function () {
 	console.log("FUCK")
-	$("#projects").slideDown(1000)
+	$("#info").animate({width:"toggle",height:"toggle"})
 });
