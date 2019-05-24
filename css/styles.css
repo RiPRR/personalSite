@@ -10,6 +10,10 @@
 #main{
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	border: solid;
+
+
 	/*border: solid;*/
 }
 #info{
@@ -20,10 +24,24 @@
 	/*border: dotted;*/
 	width: 35%;
 	border:solid;
+
+}
+#cbtitle{
+	font-family: "citibike";
+	font-size: 40pt;
 }
 .navs{
 	cursor: pointer;
 	width: 5%;
+}
+.descriptor{
+	width: 33%;
+	border: solid;
+	font-size: 10pt;
+}
+.tech{
+	color: #C63D46;
+	border-radius: 15px; 
 }
 p{
 	padding: 10px;
@@ -33,9 +51,27 @@ a{
 	color: #C63D46;
 	text-decoration: none;
 }
+b{
+
+}
+
 @font-face{
 	font-family: "robo";
 	src:url(../fonts/Roboto-Black.ttf);
+}
+@font-face{
+	font-family: "citibike";
+	src:url(../fonts/Bloomer.otf) format("opentype");
+}
+#projectPage{
+	border: dotted;
+	background-color: #49516F;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 20pt;
+	display: flex;
+	flex-direction: column;
+	width: 35%
 }
 .unselectable {
    -moz-user-select: -moz-none;
