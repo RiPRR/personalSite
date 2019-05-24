@@ -11,10 +11,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: solid;
-
-
-	/*border: solid;*/
+	justify-content: center;
 }
 #info{
 	border-radius: 5px;
@@ -26,35 +23,125 @@
 	border:solid;
 
 }
+#hometext{
+	padding: 10px;
+	font-family: "helvetica"
+}
 #cbtitle{
 	font-family: "citibike";
 	font-size: 40pt;
+}
+#lyricstitle{
+	font-family: "glitch";
+	font-size: 30pt;
+}
+#pulleytitle{
+	font-size: 35pt;
+	margin-left:10px;
+	margin-bottom: 5px; 
+}
+#lyricfetchtitle{
+	font-size: 35pt;
+	margin-left:10px;
+	margin-bottom: 5px; 
+}
+#gardenertitle{
+	font-size: 35pt;
+	margin-left:10px;
+	margin-bottom: 5px; 
+}
+#projectPage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#cbDiv{
+	background-color: #49516F;
+}
+#lyricsDiv{
+	background-color: #8797AF;
+}
+#pulleyDiv{
+	background-color: #F2F3AE
+}
+#lyricfetchDiv{
+	background-color: #56666B
+}
+#gardenerDiv{
+	background-color: #A9C5A0;
 }
 .navs{
 	cursor: pointer;
 	width: 5%;
 }
 .descriptor{
-	width: 33%;
-	border: solid;
+	width: 85%;
 	font-size: 10pt;
+	margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	text-align: center;
+
 }
 .tech{
 	color: #C63D46;
 	border-radius: 15px; 
+	/*text-align: center;*/
+	font-weight: bold;
+	font-family: "helvetica";
+	margin:0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	border: solid;
+	width: 75%;
+	margin-bottom:0px;
+	padding-bottom: 0px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
-p{
-	padding: 10px;
-	font-family: "helvetica"
+.techS{
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0px;
+	font-size: 15px;
+	margin-bottom:0px;
+	padding-bottom: 0px;
+	
+	
+}
+.project{
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 20pt;
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin-bottom: 20px;
+}
+.projectTitle{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.projectL2{
+	display: flex;
+	flex-direction: row;
+}
+.icos{
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+	padding-right: 10px;
+	
 }
 a{
 	color: #C63D46;
 	text-decoration: none;
 }
-b{
-
-}
-
 @font-face{
 	font-family: "robo";
 	src:url(../fonts/Roboto-Black.ttf);
@@ -63,25 +150,14 @@ b{
 	font-family: "citibike";
 	src:url(../fonts/Bloomer.otf) format("opentype");
 }
-#projectPage{
-	border: dotted;
-	background-color: #49516F;
-	font-weight: bold;
-	border-radius: 5px;
-	font-size: 20pt;
-	display: flex;
-	flex-direction: column;
-	width: 35%
+@font-face {
+  font-family: glitch;
+  src: url(../fonts/multivac-interference.ttf);
 }
 .unselectable {
    -moz-user-select: -moz-none;
    -khtml-user-select: none;
    -webkit-user-select: none;
-
-   /*
-     Introduced in IE 10.
-     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-   */
    -ms-user-select: none;
    user-select: none;
 }
