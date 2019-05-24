@@ -12,8 +12,13 @@
 	justify-content: center;
 	align-items: center;
 	justify-content: center;
+	align-items: center;
+	
 }
-#info{
+#mainAbt{
+	width: 80%;
+}
+.basictext{
 	border-radius: 5px;
 	transform: rotate(2deg);
 	background-color: grey;
@@ -55,6 +60,19 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+#aboutPage{
+	display: flex;
+	border: solid;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: "helvetica"
+}
+#aboutCenter{
+	display: flex;
+	f
 }
 #cbDiv{
 	background-color: #49516F;
