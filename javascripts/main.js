@@ -1,39 +1,43 @@
-$(document).ready(function(){
-	localStorage.setItem("tab","#info")
-	document.getElementById('projectPage').style.display = "none"
-	document.getElementById('aboutPage').style.display = "none"
-	document.getElementById('blogPage').style.display = "none"
-})
-
-$("#projects").click(function () {
-	deRender()
-	localStorage.setItem('tab','#projectPage');
-	$("#projectPage").animate({width:"toggle",height:"toggle"})
+$(document).ready(function() {
+  localStorage.setItem("tab", "#homePage");
+  document.getElementById("projectPage").style.display = "none";
+  document.getElementById("aboutPage").style.display = "none";
+  document.getElementById("blogPage").style.display = "none";
 });
 
-$("#home").click(function () {
-	deRender()
-	localStorage.setItem('tab','#info');
-	$("#info").animate({width:"toggle",height:"toggle"})
-	document.getElementById('info').visibility = "visibile"
+$("#homeBttn").click(function() {
+  popIn("#homePage");
 });
 
-$("#blog").click(function () {
-	deRender()
-	localStorage.setItem('tab','#blogPage');
-	$("#blogPage").animate({width:"toggle",height:"toggle"})
+$("#projects").click(function() {
+  popIn("#projectPage");
 });
 
-$("#about").click(function () {
-	deRender()
-	localStorage.setItem('tab','#aboutPage');
-	$("#aboutPage").animate({width:"toggle",height:"toggle"})
+$("#blog").click(function() {
+  popIn("#blogPage");
 });
 
+$("#about").click(function() {
+  popIn("#aboutPage");
+});
 
+let descriptors = document.getElementsByClassName("descriptor");
+function deRender(target) {
+  for (let descriptor of descriptors) {
+    descriptor.style.visibility = "hidden";
+  }
+  $(target).animate({ width: "toggle", height: "toggle" }, 800);
+}
 
-function deRender(){
-	let selector = localStorage.getItem("tab")
-	$(selector).animate({width:"toggle",height:"toggle"})
-	//setTimeout(function(){console.log("waiting"),7000})
+function popIn(target) {
+  deRender(localStorage.getItem("tab"));
+  $(target).animate({ width: "toggle", height: "toggle" }, 800);
+  $(target)
+    .promise()
+    .done(() => {
+      for (let descriptor of descriptors) {
+        descriptor.style.visibility = "visible";
+      }
+    });
+  localStorage.setItem("tab", target);
 }

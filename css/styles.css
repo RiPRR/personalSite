@@ -1,204 +1,194 @@
-#heading{
-	font-family: "robo";
-	font-size: 32pt;
+#heading {
+  font-family: "robo";
+  font-size: 42pt;
+}
+#nav {
+  font-family: "helvetica";
+  font-size: 12pt;
+  margin-left: 10px;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 250%;
 
+  flex-direction: column;
 }
-#nav{
-	font-family: "helvetica";
-	font-size:12pt;
-	margin-left: 10px;
-
+#mainAbt {
+  width: 80%;
 }
-#main{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	justify-content: center;
-	align-items: center;
-	height: 250%;
-
-	flex-direction: column;
-	
+#center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#mainAbt{
-	width: 80%;
+.basictext {
+  border-radius: 5px;
+  transform: rotate(2deg);
+  background-color: #b0b2b8;
+  display: flex;
+  /*border: dotted;*/
+  width: 35%;
+  border: solid;
 }
-#center{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+#hometext {
+  padding: 10px;
+  font-family: "helvetica";
 }
-.basictext{
-	border-radius: 5px;
-	transform: rotate(2deg);
-	background-color: #B0B2B8;
-	display: flex;
-	/*border: dotted;*/
-	width: 35%;
-	border:solid;
-
+.projectTitle {
+  font-size: 70pt;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
 }
-#hometext{
-	padding: 10px;
-	font-family: "helvetica"
+#cbtitle {
+  font-family: "citibike";
+  font-size: 50pt;
+  display: flex;
+  justify-content: flex-start;
 }
-#cbtitle{
-	font-family: "citibike";
-	font-size: 40pt;
-}
-#lyricstitle{
-	font-family: "glitch";
-	font-size: 30pt;
-}
-#pulleytitle{
-	font-size: 35pt;
-	margin-left:10px;
-	margin-bottom: 5px; 
-}
-#lyricfetchtitle{
-	font-size: 35pt;
-	margin-left:10px;
-	margin-bottom: 5px; 
-}
-#gardenertitle{
-	font-size: 35pt;
-	margin-left:10px;
-	margin-bottom: 5px; 
-}
-#projectPage{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-#aboutPage{
-	display: flex;
-	border: solid;
-	width: 50%;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	text-align: center;
-	font-family: "helvetica";
-	font-size: 14pt;
-}
-#aboutCenter{
-	display: flex;
-	f
-}
-#cbDiv{
-	background-color: #49516F;
-}
-#lyricsDiv{
-	background-color: #8797AF;
-}
-#pulleyDiv{
-	background-color: #F2F3AE
-}
-#lyricfetchDiv{
-	background-color: #56666B
-}
-#gardenerDiv{
-	background-color: #A9C5A0;
-}
-.navs{
-	cursor: pointer;
-	width: 5%;
-
-}
-.descriptor{
-	width: 85%;
-	font-size: 10pt;
-	margin-left: 10px;
-	margin-top: 0px;
-	margin-bottom: 10px;
-	margin-left: 20px;
-	text-align: center;
-
-}
-.tech{
-	color: #C63D46;
-	border-radius: 15px; 
-	/*text-align: center;*/
-	font-weight: bold;
-	font-family: "helvetica";
-	margin:0px;
-	padding: 0px;
-	display: flex;
-	flex-direction: row;
-	border: solid;
-	width: 75%;
-	margin-bottom:0px;
-	padding-bottom: 0px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-}
-.techS{
-	padding-top: 0px;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin: 0px;
-	font-size: 15px;
-	margin-bottom:0px;
-	padding-bottom: 0px;
-	
-	
-}
-.project{
-	font-weight: bold;
-	border-radius: 5px;
-	font-size: 20pt;
-	display: flex;
-	flex-direction: column;
-	width: 45%;
-	margin-bottom: 20px;
-}
-.projectTitle{
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-.projectL2{
-	display: flex;
-	flex-direction: row;
-}
-.icos{
-	width: 20px;
-	height: 20px;
-	margin: 0px;
-	padding-right: 10px;
-	cursor: pointer;
-	
-}
-a{
-	color: #C63D46;
-	text-decoration: none;
-}
-#center{
-	font-size: 20px;
-	position: ;
+#lyricstitle {
+  font-family: "glitch";
+  font-size: 40pt;
+  display: flex;
+  justify-content: flex-start;
 }
 
-@font-face{
-	font-family: "robo";
-	src:url(../fonts/Roboto-Black.ttf);
+#projectPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-@font-face{
-	font-family: "citibike";
-	src:url(../fonts/Bloomer.otf) format("opentype");
+#aboutPage {
+  display: flex;
+  border: solid;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  font-family: "helvetica";
+  font-size: 14pt;
+  transform: rotate(0deg);
+}
+#aboutCenter {
+  display: flex;
+}
+#cbDiv {
+  background-color: #49516f;
+}
+#lyricsDiv {
+  background-color: #8797af;
+}
+#pulleyDiv {
+  background-color: #f2f3ae;
+}
+#lyricfetchDiv {
+  background-color: #56666b;
+}
+#gardenerDiv {
+  background-color: #a9c5a0;
+}
+.navs {
+  cursor: pointer;
+  width: 5%;
+}
+.descriptor {
+  width: 85%;
+  font-size: 17pt;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+.tech {
+  color: #c63d46;
+  border-radius: 15px;
+  /*text-align: center;*/
+  font-weight: bold;
+  font-family: "helvetica";
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+
+  width: 75%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
+.techS {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 10px;
+  margin: 0px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.project {
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 20pt;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 20px;
+}
+.projectTitle {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 35pt;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.projectL2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+.icos {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+a {
+  color: #c63d46;
+  text-decoration: none;
+}
+#center {
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "robo";
+  src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "citibike";
+  src: url(../fonts/Bloomer.otf) format("opentype");
 }
 @font-face {
   font-family: glitch;
   src: url(../fonts/multivac-interference.ttf);
 }
 .unselectable {
-   -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-}
-p{
-
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
