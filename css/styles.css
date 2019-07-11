@@ -33,7 +33,7 @@
   display: flex;
   /*border: dotted;*/
   width: 35%;
-  border: solid;
+  
 }
 #hometext {
   padding: 10px;
@@ -47,14 +47,17 @@
   justify-content: flex-start;
 }
 #cbtitle {
-  font-family: "citibike";
-  font-size: 50pt;
+  
+ 
   display: flex;
+
   justify-content: flex-start;
+  
 }
 #lyricstitle {
-  font-family: "glitch";
-  font-size: 40pt;
+  
+
+  
   display: flex;
   justify-content: flex-start;
 }
@@ -64,6 +67,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 #aboutPage {
   display: flex;
@@ -130,9 +134,12 @@
 .techS {
   padding-top: 0px;
   padding-right: 0px;
-  padding-left: 10px;
-  margin: 0px;
-  font-size: 20px;
+  padding-left: 0px;
+  margin: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 35px;
+  font-size: 25px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
