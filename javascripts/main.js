@@ -24,10 +24,14 @@ $("#about").click(function () {
 let descriptors = document.getElementsByClassName("descriptor");
 function deRender(target) {
   for (let descriptor of descriptors) {
-    $(descriptor).animate({ opacity: ".1" }, 120)
+    $(descriptor).animate({ opacity: ".0" }, 120)
     $(descriptor)
       .promise()
-      .done(() => { descriptor.style.visibility = "hidden"; })
+      .done(() => {
+
+
+        descriptor.style.visibility = "hidden";
+      })
     //descriptor.style.visibility = "hidden";
   }
   $(target).animate({ width: "toggle", height: "toggle" }, 800);
@@ -40,8 +44,8 @@ function popIn(target) {
     .promise()
     .done(() => {
       for (let descriptor of descriptors) {
-        $(descriptor).animate({ opacity: ".95" }, 120)
         descriptor.style.visibility = "visible";
+        $(descriptor).animate({ opacity: "1" }, 120)
 
       }
     });
