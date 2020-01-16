@@ -1,134 +1,108 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>|◑ ▃ ◑|</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/hover.css">
-	<link rel="stylesheet"
-		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<script src="https://use.fontawesome.com/fea8f52618.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<script type="text/javascript" src='javascripts/main.js'></script>
+	<style>
+		h1{
+			font-family: graff;
+			font-weight: normal;
+			text-align: center;
+			letter-spacing: 10px;
+
+		}
+		h2{
+			font-weight: normal;
+			opacity: 0.2;
+			cursor: pointer;
+		}
+		pre{
+			font-size: 10pt;
+			letter-spacing: 0px;
+		}
+		@font-face {
+  			font-family: graff;
+  			src: url('fonts/RobinGraffitiFilledin.ttf');
+		}
+		.noselect {
+		  	-webkit-touch-callout: none; /* iOS Safari */
+		   	-webkit-user-select: none; /* Safari */
+		   	-khtml-user-select: none; /* Konqueror HTML */
+		   	-moz-user-select: none; /* Old versions of Firefox */
+		   	-ms-user-select: none; /* Internet Explorer/Edge */
+		   	user-select: none; /* Non-prefixed version, currently
+		                                  supported by Chrome, Opera and Firefox */
+		}
+		.nav{
+			font-family: 'Source Code Pro', monospace;
+			text-align: center;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			font-weight: normal;
+			width: 21%;
+			
+		}
+		.ascii{
+			display: flex;
+			justify-content: center;
+		}
+
+		.title {
+		    -webkit-animation: pulsate 3s ease-out;
+		    -webkit-animation-iteration-count: infinite; 
+		    opacity: 0.5;
+		}
+		.heading{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@-webkit-keyframes pulsate {
+		    0% { 
+		        font-size: 30px;
+		    }
+		    50% { 
+		        font-size: 32px;
+		    }
+		    100% { 
+		        font-size: 30px;
+		    }
+}
+
+		
+	</style>
 </head>
-
-<body>
-	<h1 id="heading" class="unselectable">RYAN RIVERA</h1>
-
-	<div id="main">
-		<div id="homePage" class="tabs basictext">
-			<b>
-				<div id="hometext" class="descriptor">
-					<p>Hi i'm Ryan</p>
-					<p>This site houses all of the interesting things I find and create on the internet. </p>
-					<p>I hope you find something useful here.</p>
-					<a href="mailto:rpr288@nyu.edu?:">- rpr288@nyu.edu </a>
-				</div>
-			</b>
+<body onload="onload()">
+	<div class='heading noselect'>
+		<h1 class='title'>ryan rivera</h1>
+		<div class='ascii'>
+			<pre class='animal' onclick="changeAnimal()">
+      |\_/|                  
+      | @ @   Woof! 
+      |   <>              _  
+      |  _/\------____ ((| |))
+      |               `--' |   
+  ____|_       ___|   |___.' 
+ /_/_____/____/_______|
+			</pre>
 		</div>
-		<div id="projectPage" class="tabs">
-			<div id="cbDiv" class="project">
-				<div class="projTitleDiv">
-					<h2 id="cbtitle" class="projectTitle descriptor">citibiker</h2>
-					<i class="fa fa-plus" aria-hidden="true"></i>
-					<h3 class="smallDesc descriptor"></h3>
-					<i class="devicon-github-plain gitIco projectTitle "></i>
-				</div>
-				<div class="projectL2 descriptor">
-					<div class="descriptor">
-						<div class="tech">
-							<i class="devicon-javascript-plain techS"></i>
-							<i class="devicon-nodejs-plain techS"></i>
-							<i class="devicon-mongodb-plain techS"></i>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div id="lyricsDiv" class="project">
-				<div class="projTitleDiv">
-					<h2 id="cbtitle" class="projectTitle descriptor">songRater</h2>
-					<i class="devicon-github-plain gitIco projectTitle "></i>
-				</div>
-				<div class="projectL2 descriptor">
-					<div class="descriptor">
-						<div class="tech">
-							<i class="devicon-javascript-plain techS"></i>
-							<i class="devicon-nodejs-plain techS"></i>
-							<i class="devicon-mongodb-plain techS"></i>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div id="pulleyDiv" class="project">
-				<div class="projTitleDiv">
-					<h2 id="cbtitle" class="projectTitle descriptor">pulley</h2>
-					<i class="devicon-github-plain gitIco projectTitle "></i>
-				</div>
-				<div class="projectL2 descriptor">
-					<div class="descriptor">
-						<div class="tech">
-							<i class="devicon-javascript-plain techS"></i>
-							<i class="devicon-nodejs-plain techS"></i>
-							<i class="devicon-mongodb-plain techS"></i>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div id="lyricfetchDiv" class="project">
-				<div class="projTitleDiv">
-					<h2 id="cbtitle" class="projectTitle descriptor">lyricFetch</h2>
-					<i class="devicon-github-plain gitIco projectTitle "></i>
-				</div>
-				<div class="projectL2 descriptor">
-					<div class="descriptor">
-						<div class="tech">
-							<i class="devicon-python-plain techS"></i>
-							<i class="devicon-nodejs-plain techS"></i>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<div id="gardenerDiv" class="project">
-				<div class="projTitleDiv">
-					<h2 id="cbtitle" class="projectTitle descriptor">gardener</h2>
-					<i class="devicon-github-plain gitIco projectTitle "></i>
-				</div>
-				<div class="projectL2 descriptor">
-					<div class="descriptor">
-						<div class="tech">
-							<i class="devicon-c-plain techS"></i>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div id="blogPage" class="tabs">
-			<p>BLOG HERE!!!suhgfiuysgehfuoiygwhoipuf</p>
-		</div>
-		<div id="aboutPage" class="tabs basictext">
-			<div id="center">
-				<p>
-					Hi, I'm Ryan
-				</p>
-			</div>
+		<div class='nav'>
+			<h2 onmouseover="sectionSwap(this)">about</h2>
+			<h2 onmouseover="sectionSwap(this)">*</h2>
+			<h2 onmouseover="sectionSwap(this)">work</h2>
 		</div>
 	</div>
-	<div id="nav">
-		<p class="navs hvr-forward unselectable" id="homeBttn">home</p>
-		<p class="navs hvr-forward unselectable" id="projects">work</p>
-		<p class="navs hvr-forward unselectable" id="blog">art</p>
-		<p class="navs hvr-forward unselectable" id="about">about</p>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script type="text/javascript" src="javascripts/main.js"></script>
+	
+	
+	
+
 </body>
 
 </html>
