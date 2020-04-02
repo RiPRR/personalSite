@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>|◑ ▃ ◑|</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -8,36 +9,69 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 	<script type="text/javascript" src='javascripts/main.js'></script>
 	<style>
-		h1{
+		::-webkit-scrollbar {
+			display: none;
+		}
+
+		.dunes {
+			background-image: url('../images/rabe_dunes.jpg');
+			background-repeat: repeat-y;
+			width: 350px;
+			height: 10000px;
+			background-size: contain;
+
+
+		}
+
+		.container {
+			overflow: hidden;
+			width: 100%;
+			align-items: top;
+			display: flex;
+			justify-content: center;
+		}
+
+		h1 {
 			font-family: graff;
 			font-weight: normal;
 			text-align: center;
 			letter-spacing: 10px;
 
 		}
-		h2{
+
+		h2 {
 			font-weight: normal;
 			opacity: 0.2;
 			cursor: pointer;
 		}
-		pre{
+
+		pre {
 			font-size: 10pt;
 			letter-spacing: 0px;
 		}
+
 		@font-face {
-  			font-family: graff;
-  			src: url('fonts/RobinGraffitiFilledin.ttf');
+			font-family: graff;
+			src: url('fonts/RobinGraffitiFilledin.ttf');
 		}
+
 		.noselect {
-		  	-webkit-touch-callout: none; /* iOS Safari */
-		   	-webkit-user-select: none; /* Safari */
-		   	-khtml-user-select: none; /* Konqueror HTML */
-		   	-moz-user-select: none; /* Old versions of Firefox */
-		   	-ms-user-select: none; /* Internet Explorer/Edge */
-		   	user-select: none; /* Non-prefixed version, currently
+			-webkit-touch-callout: none;
+			/* iOS Safari */
+			-webkit-user-select: none;
+			/* Safari */
+			-khtml-user-select: none;
+			/* Konqueror HTML */
+			-moz-user-select: none;
+			/* Old versions of Firefox */
+			-ms-user-select: none;
+			/* Internet Explorer/Edge */
+			user-select: none;
+			/* Non-prefixed version, currently
 		                                  supported by Chrome, Opera and Firefox */
 		}
-		.nav{
+
+		.nav {
 			font-family: 'Source Code Pro', monospace;
 			text-align: center;
 			display: flex;
@@ -45,19 +79,21 @@
 			flex-direction: row;
 			font-weight: normal;
 			width: 21%;
-			
+
 		}
-		.ascii{
+
+		.ascii {
 			display: flex;
 			justify-content: center;
 		}
 
 		.title {
-		    -webkit-animation: pulsate 3s ease-out;
-		    -webkit-animation-iteration-count: infinite; 
-		    opacity: 0.5;
+			-webkit-animation: pulsate 3s ease-out;
+			-webkit-animation-iteration-count: infinite;
+			opacity: 0.5;
 		}
-		.heading{
+
+		.heading {
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
@@ -65,32 +101,39 @@
 		}
 
 		@-webkit-keyframes pulsate {
-		    0% { 
-		        font-size: 30px;
-		    }
-		    50% { 
-		        font-size: 32px;
-		    }
-		    100% { 
-		        font-size: 30px;
-		    }
-}
+			0% {
+				font-size: 30px;
+			}
 
-		
+			50% {
+				font-size: 32px;
+			}
+
+			100% {
+				font-size: 30px;
+			}
+		}
 	</style>
 </head>
+
 <body onload="onload()">
 	<div class='heading noselect'>
 		<h1 class='title'>ryan rivera</h1>
 		<div class='ascii'>
 			<pre class='animal' onclick="changeAnimal()">
-      |\_/|                  
-      | @ @   Woof! 
-      |   <>              _  
-      |  _/\------____ ((| |))
-      |               `--' |   
-  ____|_       ___|   |___.' 
- /_/_____/____/_______|
+      _.-.
+ __.-' ,  \
+'--'-'._   \
+        '.  \
+         )-- \ __.--._
+        /   .'        '--.
+       .               _/-._
+       :       ____._/   _-'
+        '._          _.'-'
+           '-._    _.'
+               \_|/
+              __|||
+              >__/'
 			</pre>
 		</div>
 		<div class='nav'>
@@ -98,10 +141,18 @@
 			<h2 onmouseover="sectionSwap(this)">*</h2>
 			<h2 onmouseover="sectionSwap(this)">work</h2>
 		</div>
+		<div>
+
+		</div>
+		<div class='container'>
+			<div class='dunes'></div>
+		</div>
+
+
 	</div>
-	
-	
-	
+
+
+
 
 </body>
 
