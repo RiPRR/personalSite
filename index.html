@@ -13,24 +13,6 @@
 			display: none;
 		}
 
-		.dunes {
-			background-image: url('../images/rabe_dunes.jpg');
-			background-repeat: repeat-y;
-			width: 350px;
-			height: 10000px;
-			background-size: contain;
-
-
-		}
-
-		.container {
-			overflow: hidden;
-			width: 100%;
-			align-items: top;
-			display: flex;
-			justify-content: center;
-		}
-
 		h1 {
 			font-family: graff;
 			font-weight: normal;
@@ -113,6 +95,28 @@
 				font-size: 30px;
 			}
 		}
+
+		.work {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.dunes {
+			background-image: url('../images/rabe_dunes.jpg');
+			background-repeat: repeat-y;
+			width: 350px;
+			height: 10000px;
+			background-size: contain;
+		}
+
+		.special {
+			overflow: hidden;
+			width: 100%;
+			align-items: top;
+			display: flex;
+			justify-content: center;
+		}
 	</style>
 </head>
 
@@ -122,7 +126,7 @@
 		<div class='ascii'>
 			<pre class='animal' onclick="changeAnimal()">
       _.-.
- __.-' ,  \
+ __.-' <a href='https://google.com'>,</a>  \
 '--'-'._   \
         '.  \
          )-- \ __.--._
@@ -137,23 +141,27 @@
 			</pre>
 		</div>
 		<div class='nav'>
-			<h2 onmouseover="sectionSwap(this)">about</h2>
-			<h2 onmouseover="sectionSwap(this)">*</h2>
-			<h2 onmouseover="sectionSwap(this)">work</h2>
+			<h2 id='about' onClick="sectionSwap(this)">about</h2>
+			<h2 id='special' onClick="sectionSwap(this)">*</h2>
+			<h2 id='work' onClick="sectionSwap(this)">work</h2>
 		</div>
-		<div>
-
+		<div class='sections'>
+			<div class='about'>
+				<p>
+					Hi I'm Ryan, an aspiring web-developer from NYC. Welcome to my website
+				</p>
+			</div>
+			<div class='work'>
+				<a href="https://github.com/RiPRR/SongRater"><img
+						src="https://gh-card.dev/repos/RiPRR/SongRater.svg"></a>
+				<a href="https://github.com/RiPRR/personalSite"><img
+						src="https://gh-card.dev/repos/RiPRR/personalSite.svg"></a>
+			</div>
+			<div class='special'>
+				<div class='dunes'></div>
+			</div>
 		</div>
-		<div class='container'>
-			<div class='dunes'></div>
-		</div>
-
-
 	</div>
-
-
-
-
 </body>
 
 </html>
